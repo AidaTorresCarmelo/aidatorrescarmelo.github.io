@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario| Aida Torres</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+    <!--Icono de la página-->
+
+    <link rel="icon" href="../IMG/koala-apple.png" type="image/png" />
+
+</head>
+<body>
+    
+    <!--Contenido de parte superior (header)-->
+
+    <header class="header">
+        <nav>
+            <ul>
+                <div class="header_izquierda">
+                    <li>
+                        <h2>Aida Torres Carmelo</h2>
+                        <p>IES Villablanca - Vicálvaro, Madrid</p>
+                    </li>
+                </div>
+                <div class="header_derecha"> 
+                    <li><a href="../HTML/index.html">Inicio</a></li>
+                    <li><a href="../HTML/curriculum.html">Curriculum Vitae</a></li>
+                    <li><a href="../HTML/formulario.html">Formulario</a></li>
+                    <li><a href="../HTML/proyecto.html">Proyecto</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Barra lateral-->
+
+    <aside>
+        <div class="redes_derecha">
+            <ul>
+                <li><a href="https://www.instagram.com/aiidaaa.07/" target="blank"><img src="../IMG/instagram.svg" alt="instagram"></a></li>
+                <li><a href="https://twitter.com/aiidaaa07" target="blank"><img src="../IMG/twitter.svg" alt="twitter"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCRVd30czk_nW2yaM0wSpWEg" target="blank"><img src="../IMG/youtube.svg" alt="youtube"></a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!--Pie de página-->
+
+    <footer class="footer">
+        <div class="footer_izquierda">
+            Creación de una página web. Trabajo final para Aplicaciones Web
+        </div> 
+        <div class="footer_derecha">
+            © Creado por Aida Torres Carmelo
+        </div>
+    </footer>
+
+    <!--Contenido de formulario-->
+
+    <h1>‒ Formulario ‒</h1>
+
+    <div>
+        <form class="formulario">
+
+            <!--Para rellenar-->
+
+            <label for="Nombre">Nombre</label>
+                <div><input type="text"></div>
+
+            <label for="Apellidos">Apellidos</label>
+                <div><input type="text"></div>
+
+            <label for="Nombre de usuario">Nombre de usuario</label>
+                <div><input type="text"></div>
+            
+            <label for="Contraseña">Contraseña</label>
+            <div><input type="password" name="contraseña" id="contraseña"></div>
+
+            <label for="Dirección">Dirección</label>
+                <div><input type="text"></div>
+
+            <label for="Código postal">Código postal</label>
+                <div><input type="text"></div>
+
+            <label for="Teléfono">Teléfono</label>
+                <div><input type="text"></div>
+
+            <label for="Correo electrónico">Correo electrónico</label>
+                <div><input type="email"></div>
+
+            <label for="Cumpleaños">Cumpleaños</label>
+                <div><input type="date"></div>
+
+            <!--Para elegir entre opciones (una o varias + rellenar mucho texto)-->
+
+            <label for="Sexo">Sexo</label>
+                <div>
+                    <input type="radio" name="Sexo" id="Sexo">
+                    <label for="Masculino">Masculino</label>
+                </div>
+                <div> 
+                    <input type="radio" name="Sexo" id="Sexo">
+                    <label for="Femenino">Femenino</label>
+                </div>
+ 
+                <div>
+                    <label for="Color">Color favorito</label>
+                    <input type="color">
+                </div>
+
+                <label for="Estudios">¿Qué estás estudiando?</label>
+                <div>
+                    <select name="Estudios" id="Estudios">
+                        <option value="Primaria">Educación Primaria</option>
+                        <option value="Secundaria">Educación Secundaria</option> 
+                        <option value="Grado Medio">Grado Medio</option>
+                        <option value="Grado Superior">Grado Superior</option>
+                        <option value="Bachillerato">Bachillerato</option>
+                        <option value="Universidad">Universidad</option>
+                        <option value="Otros estudios">Otros estudios</option>
+                        <option value="Estoy trabajando">Estoy trabajando</option>
+                        <option value="No estudio">No estudio</option>
+                    </select>
+                </div>
+
+                <label for="Año">¿Qué quieres hacer el año que viene?</label>
+                <div>
+                    <select name="Año" id="Año">
+                        <option value="Estudiar">Estudiar</option>
+                        <option value="Trabajar">Trabajar</option>
+                        <option value="Ambas">Estudiar y trabajar</option>
+                    </select>
+                </div>
+
+                <label for="Época">¿Cuál es tu época del año favorita?</label>
+                <div>
+                    <select name="Época" id="Época">
+                        <option value="Primavera">Primavera</option>
+                        <option value="Verano">Verano</option> 
+                        <option value="Otoño">Otoño</option>
+                        <option value="Invierno">Invierno</option>
+                    </select>
+                </div>
+
+                <label for="Tiempo libre">¿Qué te gusta hacer en tu tiempo libre?</label>
+                <div>
+                    <textarea name="Tiempo libre" id="Tiempo libre" cols="30" rows="2" placeholder="¡Cuéntame!"></textarea>
+                </div>
+
+            <label for="Asignatura">¿Que asignatura te gusta más del módulo?</label>
+            <div>
+                <label for="Seguridad Informática">Seguridad Informática</label>
+                <input type="checkbox" name="Seguridad Informática" id="Seguridad Informática">
+                <label for="Aplicaciones Web">Aplicaciones Web</label>
+                <input type="checkbox" name="Aplicaciones Web" id="Aplicaciones Web">
+                <label for="Servicios en Red">Servicios en Red</label>
+                <input type="checkbox" name="Servicios en Red" id="Servicios en Red">
+                <label for="Servicios Operativos en Red">Servicios Operativos en Red</label>
+                <input type="checkbox" name="Servicios Operativos en Red" id="Servicios Operativos en Red">
+                <label for="Inglés">Inglés</label>
+                <input type="checkbox" name="Inglés" id="Inglés">
+                <label for="Empresas">Empresas</label>
+                <input type="checkbox" name="Empresas" id="Empresas">
+            </div>
+
+            <!--Botones para terminar el formulario-->
+
+            <div>
+                <button type="reset">Refrescar</button>
+                <button type="submit">Terminar y enviar</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
