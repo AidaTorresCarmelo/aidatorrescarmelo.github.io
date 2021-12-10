@@ -255,6 +255,8 @@ h1 {
     margin-left: 350px;
     margin-top: 20px;
     margin-bottom: 100px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 .video video {
